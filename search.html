@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Search Bar</title>
+  <style>
+    .search-bar-container {
+      width: 90%;
+      max-width: 800px;
+      align-items: center;
+    }
+    .search-bar {
+      display: flex;
+      border: 2px solid #0078d4;
+      border-radius: 50px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .search-bar input {
+      flex: 1;
+      border: none;
+      padding: 10px 50px;
+      font-size: 16px;
+      outline: none;
+    }
+    .search-bar button {
+      padding: 10px 40px;
+      border: none;
+      background-color: #0078d4;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .search-bar button:hover {
+      background-color: #005fa3;
+    }
+    .container2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  </style>
+</head>
+<body>
+    <div class="container2">
+        <div class="search-bar-container">
+            <div class="search-bar">
+              <input type="text" placeholder="Where do you want to go?">
+              <button>Search</button>
+            </div>
+          </div>
+    </div>
+  
+</body>
+</html>

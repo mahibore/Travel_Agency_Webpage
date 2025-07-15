@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  </head>
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+        background-color: WHITE;
+    }
+    .main{
+        background-color:  #FFE400;
+        height: 120px;
+        display:flex;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .Logo{
+        padding:10px;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .Logo img{
+        height:110px;
+        width: 110px; 
+    }
+    .head{
+        padding:18px;
+        color: black;
+        margin-top: 30px;
+    }
+    .head h2{
+        text-align: center;
+    }
+    .nav-bar{
+        padding:18px;
+        margin-top:40px ;
+    }
+    .nav-list{
+        display:flex;
+        gap:30px;
+        list-style: none;
+        margin-left:140px;
+    }
+    .nav-list a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+    .nav-list a:hover{
+        color: #3E5879;
+        transform: scale(1.5);
+    }
+    .explore{
+        align-items: center;
+    }
+    .explore button{
+        padding:3px 35px;
+        border: none;
+        border-radius: 25px;
+        margin-top: 57px;
+        margin-left: 60px;
+        background-color: black;
+        color: white;
+    }
+    button:hover{
+        background-color: white;
+        color:black;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+    .container{
+      margin-top: 30px;
+    }
+    .places{
+        text-align: center;
+        font-size: 28px;
+        font-family: cursive;
+        padding:25px;
+        color: black;
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    a{
+      text-decoration: none;
+    }
+    .social-icons a {
+            color: white;
+            margin-right: 15px;
+            font-size: 24px;
+            transition: all 0.3s ease;
+      }
+      .social-icons i:hover {
+            color: #FFC107;
+            transform: scale(1.2);
+        }
+        .search-bar-container {
+      width: 90%;
+      max-width: 800px;
+      align-items: center;
+      margin-top: 30px;
+    }
+    .search-bar {
+      display: flex;
+      border: 1px solid #C4DFE6;
+      border-radius: 50px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .search-bar input {
+      flex: 1;
+      border: none;
+      padding: 4px 50px;
+      font-size: 16px;
+      outline: none;
+    }
+    .search-bar button {
+      padding: 10px 40px;
+      border: none;
+      background-color: #2E9CCA;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.4s;
+    }
+    .search-bar button:hover {
+      background-color:  #25274d;
+      color: white;
+    }
+    .container2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+   <div class="main">
+    <div class="Logo">
+        <img src="Logo.png" alt="img">
+    </div>
+    <div class="head">
+        <h2>Travel Agency</h2>
+    </div>
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li><a href="Home">Home</a></li>
+            <li><a href="Destinations">Destinations</a></li>
+            <li><a href="Packages">Packages</a></li>
+            <li><a href="About Us">About Us</a></li>
+            <li><a href="Contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="explore">
+        <button>Explore Places</button>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="search-bar-container">
+        <div class="search-bar">
+          <input type="text" placeholder="Where do you want to go?">
+          <button>search</button>
+        </div>
+      </div>
+</div>
+  <div class="container">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="title.gif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="balloon.gif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="quote1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="quote2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2300">
+            <img src="carosuels.gif" class="d-block w-100" alt="...">
+          </div>
+        </div>  
+    </div>
+    <div class="places"><p>Exclusive Travel Packages</p></div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100" style="border:none; background-color: #FFF4D2;">
+            <img src="Taj.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Taj Mahal</h5>
+              <p class="card-text" style="color: #071952; text-align: center;">An iconic symbol of love, the Taj Mahal in Agra mesmerizes with its stunning white marble architecture and timeless beauty.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="border:none;background-color: #FFF4D2;">
+            <img src="tirupati.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Tirupati</h5>
+              <p class="card-text" style="text-align: center;">Home to the sacred Tirumala Venkateswara Temple, Tirupati is a spiritual haven attracting millions of devotees each year.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="border:none;background-color: #FFF4D2;">
+            <img src="munnar.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Munnar</h5>
+              <p class="card-text" style="text-align: center;">A lush hill station in Kerala, Munnar is renowned for its rolling tea plantations, misty hills, and wildlife sanctuaries.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="border:none;background-color: #FFF4D2;">
+            <img src="goa.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Goa</h5>
+              <p class="card-text" style="text-align: center;">Known for its golden beaches, vibrant nightlife, and Portuguese heritage, Goa is a tropical paradise for relaxation and fun.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="border:none;background-color: #FFF4D2;">
+              <img src="kedarnath.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Kedarnath</h5>
+                <p class="card-text" style="text-align: center;">Situated in the majestic Garhwal Himalayas, Kedarnath is a revered pilgrimage site and a gateway to serene spirituality.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="border:none; background-color: #FFF4D2;">
+              <img src="Manali.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Manali</h5>
+                <p class="card-text" style="text-align: center;">Nestled in the Himalayas, Manali offers stunning landscapes, snow-capped peaks, and a vibrant mix of adventure and serenity.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="border:none; background-color: #FFF4D2;">
+              <img src="varkala.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Varkala</h5>
+                <p class="card-text" style="text-align: center;">Famous for its cliffside beaches and tranquil ambiance, Varkala is a coastal gem perfect for unwinding.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="border:none; background-color: #FFF4D2;">
+              <img src="Pillar.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">1000 Pillar Temple</h5>
+                <p class="card-text" style="text-align: center;">A marvel of ancient Kakatiya architecture, this temple in Warangal showcases intricate carvings and historical grandeur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="border:none; background-color: #FFF4D2;">
+              <img src="pondi.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Pondicherry</h5>
+                <p class="card-text" style="text-align: center;">With its French colonial charm, serene beaches, and quaint streets, Pondicherry is a fusion of cultures and tranquility.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid" style="background-color: black; color: whitesmoke; padding:10px 5px; margin-top: 50px;" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4" id="about-us-footer">
+            <h5>About Us</h5>
+            <p style="text-align: justify;">
+              We are a dedicated travel agency offering personalized itineraries and unforgettable experiences. Whether you're seeking beach getaways, adventure trips, or cultural explorations, we tailor packages to fit your dreams. With years of industry expertise, we ensure seamless and memorable travel experiences, making the world accessible and exciting for you.
+            </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <h5 style="margin-left: 170px;">Quick Links</h5>
+            <ul class="list-unstyled" style="margin-left: 170px;">
+                <li><a href="#home" style="color: white;">Home</a></li>
+                <li><a href="#destination" style="color: white;">Destinations</a></li>
+                <li><a href="#packages" style="color: white;">Packages</a></li>
+                <li><a href="#about-us-footer" style="color: white;">About Us</a></li>
+                <li><a href="#contact-footer" style="color: white;">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 mb-4" id="contact-footer">
+            <h5 style="margin-left: 100px;">Contact</h5>
+            <p style="margin-left: 100px;">Email: info@travelagency.com</p>
+            <p style="margin-left: 100px;">Phone: +1 234 567 890</p>
+            <p style="margin-left: 100px;">Address: 123 Travel Street, Adventure City</p>
+        </div>
+    </div>
+
+    <div class="text-center mt-3 social-icons">
+      <a href="#" style="color: white; margin-right: 15px;" target="_blank">
+          <i class="fab fa-facebook-f" style="font-size: 24px;"></i>
+      </a>
+      <a href="#" style="color: white; margin-right: 15px;" target="_blank">
+          <i class="fab fa-instagram" style="font-size: 24px;"></i>
+      </a>
+      <a href="#" style="color: white; margin-right: 15px;" target="_blank">
+          <i class="fab fa-twitter" style="font-size: 24px;"></i>
+      </a>
+      <a href="#" style="color: white;" target="_blank">
+          <i class="fab fa-linkedin-in" style="font-size: 24px;"></i>
+      </a>
+    </div>
+  
+
+    <div class="text-center mt-4" style="border-top: 1px solid #555; padding-top: 15px;">
+        © 2024 Travel Agency | <a href="#" style="color: #FFC107;">Privacy Policy</a> | <a href="#" style="color: #FFC107;">Terms of Service</a>
+    </div>
+</div>
+</div>
+</body>
+</html>
